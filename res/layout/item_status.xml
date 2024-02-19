@@ -1,0 +1,96 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="@color/grey_dark"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/status_holder"
+        android:layout_marginVertical="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/didact_gothic"
+                android:textColor="@color/white"
+                android:text="COVID-19 Status: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvStatusCovid"
+                android:text="Negative"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/didact_gothic"
+                android:textColor="@color/turqouise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vaccination Status: "
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/didact_gothic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvStatusVaccine"
+                android:text="Fully vaccinated"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/turqouise"
+                android:fontFamily="@font/didact_gothic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As of "
+                android:fontFamily="@font/didact_gothic"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvStatusDate"
+                android:text="May 30, 2022"
+                android:fontFamily="@font/didact_gothic"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/turqouise" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
